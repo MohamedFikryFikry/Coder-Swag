@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D92AB4E72349CCB1003E0AEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AB4E62349CCB1003E0AEA /* AppDelegate.swift */; };
-		D92AB4E92349CCB1003E0AEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AB4E82349CCB1003E0AEA /* ViewController.swift */; };
+		D92AB4E92349CCB1003E0AEA /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AB4E82349CCB1003E0AEA /* CategoriesVC.swift */; };
 		D92AB4EC2349CCB1003E0AEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92AB4EA2349CCB1003E0AEA /* Main.storyboard */; };
 		D92AB4EE2349CCB3003E0AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92AB4ED2349CCB3003E0AEA /* Assets.xcassets */; };
 		D92AB4F12349CCB3003E0AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92AB4EF2349CCB3003E0AEA /* LaunchScreen.storyboard */; };
 		D92AB4FC2349CCB3003E0AEA /* Coder_SwagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AB4FB2349CCB3003E0AEA /* Coder_SwagTests.swift */; };
 		D92AB5072349CCB3003E0AEA /* Coder_SwagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AB5062349CCB3003E0AEA /* Coder_SwagUITests.swift */; };
+		D92AB5182349D3BA003E0AEA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AB5172349D3BA003E0AEA /* CategoryCell.swift */; };
+		D92AB51A2349D65D003E0AEA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AB5192349D65D003E0AEA /* Category.swift */; };
+		D92AB51D2349DAB5003E0AEA /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AB51C2349DAB5003E0AEA /* DataServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		D92AB4E32349CCB1003E0AEA /* Coder-Swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coder-Swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92AB4E62349CCB1003E0AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D92AB4E82349CCB1003E0AEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D92AB4E82349CCB1003E0AEA /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		D92AB4EB2349CCB1003E0AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D92AB4ED2349CCB3003E0AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D92AB4F02349CCB3003E0AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		D92AB5022349CCB3003E0AEA /* Coder-SwagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coder-SwagUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92AB5062349CCB3003E0AEA /* Coder_SwagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coder_SwagUITests.swift; sourceTree = "<group>"; };
 		D92AB5082349CCB3003E0AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92AB5172349D3BA003E0AEA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		D92AB5192349D65D003E0AEA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D92AB51C2349DAB5003E0AEA /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		D92AB4E52349CCB1003E0AEA /* Coder-Swag */ = {
 			isa = PBXGroup;
 			children = (
+				D92AB51B2349D8DE003E0AEA /* Services */,
+				D92AB5162349D246003E0AEA /* Model */,
+				D92AB5152349D23E003E0AEA /* View */,
+				D92AB5142349D22D003E0AEA /* Controller */,
 				D92AB4E62349CCB1003E0AEA /* AppDelegate.swift */,
-				D92AB4E82349CCB1003E0AEA /* ViewController.swift */,
 				D92AB4EA2349CCB1003E0AEA /* Main.storyboard */,
 				D92AB4ED2349CCB3003E0AEA /* Assets.xcassets */,
 				D92AB4EF2349CCB3003E0AEA /* LaunchScreen.storyboard */,
@@ -123,6 +132,38 @@
 				D92AB5082349CCB3003E0AEA /* Info.plist */,
 			);
 			path = "Coder-SwagUITests";
+			sourceTree = "<group>";
+		};
+		D92AB5142349D22D003E0AEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D92AB4E82349CCB1003E0AEA /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D92AB5152349D23E003E0AEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D92AB5172349D3BA003E0AEA /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D92AB5162349D246003E0AEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D92AB5192349D65D003E0AEA /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D92AB51B2349D8DE003E0AEA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D92AB51C2349DAB5003E0AEA /* DataServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D92AB4E92349CCB1003E0AEA /* ViewController.swift in Sources */,
+				D92AB51D2349DAB5003E0AEA /* DataServices.swift in Sources */,
+				D92AB4E92349CCB1003E0AEA /* CategoriesVC.swift in Sources */,
 				D92AB4E72349CCB1003E0AEA /* AppDelegate.swift in Sources */,
+				D92AB5182349D3BA003E0AEA /* CategoryCell.swift in Sources */,
+				D92AB51A2349D65D003E0AEA /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
